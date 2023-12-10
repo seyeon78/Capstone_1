@@ -1,8 +1,8 @@
 import pandas as pd
 
-df1=pd.read_csv('/content/중소기업은행_금융용어 해설.csv',encoding='euc-kr')
-df2=pd.read_csv('/content/한국산업은행_금융 관련 용어.csv',encoding='euc-kr')
-df3=pd.read_csv('/content/한국자산관리공사_공사홈페이지_용어사전.csv',encoding='utf-8')
+df1=pd.read_csv("C:/Users/lucy8/PycharmProjects/Capstone_1/중소기업은행_금융용어 해설.csv",encoding='euc-kr')
+df2=pd.read_csv("C:/Users/lucy8/PycharmProjects/Capstone_1/한국산업은행_금융 관련 용어.csv",encoding='euc-kr')
+df3=pd.read_csv("C:/Users/lucy8/PycharmProjects/Capstone_1/한국자산관리공사_공사홈페이지_용어사전.csv",encoding='utf-8')
 
 
 # df1, df2, df3을 합치기 위하여 용어와 설명을 제외한 열 삭제
