@@ -7,7 +7,7 @@ import pandas as pd
 plt.rc('font', family='NanumGothic')
 
 # xlsx 파일 읽기
-df = pd.read_excel('C:/Users/parky/PycharmProjects/pythonProject/pydata/economy_survey_2.xlsx')
+df = pd.read_excel("C:/Users/lucy8/PycharmProjects/Capstone_1/economy_survey_2.xlsx")
 
 # 'income'와 'consumption' 칼럼만 선택
 df_2 = df[['income', 'consumption']]
@@ -36,8 +36,6 @@ plt.show()
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# xlsx 파일 읽기
-df = pd.read_excel('C:/Users/parky/PycharmProjects/pythonProject/pydata/economy_survey_2.xlsx')
 
 # 'purpose' 칼럼을 기준으로 빈도수 계산
 purpose_counts = df['purpose'].value_counts()
@@ -62,9 +60,6 @@ plt.show()
 
 import matplotlib.pyplot as plt
 import pandas as pd
-
-# xlsx 파일 읽기
-df = pd.read_excel('C:/Users/parky/PycharmProjects/pythonProject/pydata/economy_survey_2.xlsx')
 
 # 'knowledge' 칼럼을 기준으로 빈도수 계산
 knowledge_counts = df['knowledge'].value_counts()
