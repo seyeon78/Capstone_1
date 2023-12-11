@@ -25,6 +25,7 @@ encoded_df['cluster'] = kmeans.fit_predict(encoded_df)
 
 # 결과 확인
 print(encoded_df)
+encoded_df.to_excel('encoded_cluster.xlsx', index=False)
 
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
