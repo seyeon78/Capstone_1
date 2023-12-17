@@ -26,7 +26,7 @@ encoded_df['cluster'] = kmeans.fit_predict(encoded_df)
 # 결과 확인
 print(encoded_df)
 
-file_path = 'C:/Users/lucy8/PycharmProjects/Capstone_1/project_data/encoded_cluster.xlsx'
+file_path = './../project_data/encoded_cluster.xlsx'
 encoded_df.to_excel(file_path, index=False, encoding='utf-8-sig')
 
 import matplotlib.pyplot as plt
