@@ -25,7 +25,7 @@ else:
     # 출력 옵션 변경
     pd.set_option('display.max_colwidth', None)
 
-    result = df[df.iloc[:, 2] == user_input].iloc[:, [0, 1]].sample(n=3)
+    result = tip[tip.iloc[:, 2] == user_input].iloc[:, [0, 1]].sample(n=3)
 
     if result.empty:
         print(f"입력값 {user_input}에 해당하는 행이 없습니다.")
