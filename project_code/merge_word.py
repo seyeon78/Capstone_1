@@ -1,6 +1,7 @@
 import pandas as pd
 
-df1=pd.read_csv("./../project_data/project_data/중소기업은행_금융용어 해설.csv", encoding='euc-kr')
+# 파일 불러오기
+df1=pd.read_csv("./../project_data/중소기업은행_금융용어 해설.csv", encoding='euc-kr')
 df2=pd.read_csv("./../project_data/한국산업은행_금융 관련 용어.csv", encoding='euc-kr')
 df3=pd.read_csv("./../project_data/한국자산관리공사_공사홈페이지_용어사전.csv", encoding='utf-8')
 
@@ -31,5 +32,7 @@ print(combined_df)
 combined_df.drop_duplicates(['용어'], inplace=True)
 print(combined_df)
 
+
+# 저장할 CSV 파일의 경로 지정 후 저장
 file_path = './../project_data/combined_data.csv'
 combined_df.to_csv(file_path, index=False, encoding='utf-8-sig')
