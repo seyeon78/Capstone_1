@@ -37,7 +37,7 @@ def crawl_all_content(url, max_pages=15):
     # 데이터프레임 생성
     df = pd.DataFrame(data)
 
-    file_path = 'C:/Users/lucy8/PycharmProjects/Capstone_1/project_data/financial_tip.csv'
+    file_path = './../project_data/financial_tip.csv'
     df.to_csv(file_path, index=False, encoding='utf-8-sig')
 
 # 크롤링할 웹페이지의 URL

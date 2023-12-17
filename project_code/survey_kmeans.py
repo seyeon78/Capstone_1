@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.cluster import KMeans
 
-df=pd.read_excel("C:/Users/lucy8/PycharmProjects/Capstone_1/project_data/economy_survey_2.xlsx")
+df=pd.read_excel("./../project_data/economy_survey_2.xlsx")
 
 
 # 범주형 컬럼 선택 (이 예제에서는 'income', 'consumption', 'purpose', 'knowledge')

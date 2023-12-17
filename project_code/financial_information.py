@@ -2,8 +2,8 @@
 import pandas as pd
 import random
 
-word=pd.read_csv("/Capstone_1/project_data/combined_data.csv")
-tip=pd.read_excel("/Capstone_1/project_data/finacial_tip_level.xlsx")
+word=pd.read_csv("./../project_data/combined_data.csv")
+tip=pd.read_excel("./../project_data/finacial_tip_level.xlsx")
 
 # 데이터프레임에서 랜덤으로 10개 행 선택
 random_rows = word.sample(n=10)

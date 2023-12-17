@@ -31,5 +31,5 @@ print(combined_df)
 combined_df.drop_duplicates(['용어'], inplace=True)
 print(combined_df)
 
-file_path = 'C:/Users/lucy8/PycharmProjects/Capstone_1/project_data/combined_data.csv'
+file_path = './../project_data/combined_data.csv'
 combined_df.to_csv(file_path, index=False, encoding='utf-8-sig')

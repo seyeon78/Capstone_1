@@ -2,7 +2,7 @@ import pandas as pd
 import random
 import matplotlib.pyplot as plt
 
-visual=pd.read_excel("C:/Users/lucy8/PycharmProjects/Capstone_1/encoded_cluster.xlsx")
+visual=pd.read_excel("./../project_data/encoded_cluster.xlsx")
 
 # cluster가 0인 행만 선택
 import matplotlib.pyplot as plt

@@ -12,7 +12,7 @@ font_location = 'C:/Windows/Fonts/NanumGothic.ttf'  #font 경로 설정
 font_name = fm.FontProperties(fname=font_location).get_name()
 plt.rc('font', family=font_name)
 # xlsx 파일 읽기
-df = pd.read_excel("C:/Users/lucy8/PycharmProjects/Capstone_1/economy_survey_2.xlsx")
+df = pd.read_excel("./../project_data/economy_survey_2.xlsx")
 plt.rcParams['font.family'] ='Malgun Gothic'
 plt.rcParams['axes.unicode_minus'] =False
 
