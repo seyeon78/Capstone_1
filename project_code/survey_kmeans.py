@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.cluster import KMeans
 
-df=pd.read_excel("C:/Users/lucy8/PycharmProjects/Capstone_1/economy_survey_2.xlsx")
+df=pd.read_excel("C:/Users/lucy8/PycharmProjects/Capstone_1/project_data/economy_survey_2.xlsx")
 
 
 # 범주형 컬럼 선택 (이 예제에서는 'income', 'consumption', 'purpose', 'knowledge')
@@ -25,7 +25,9 @@ encoded_df['cluster'] = kmeans.fit_predict(encoded_df)
 
 # 결과 확인
 print(encoded_df)
-encoded_df.to_excel('encoded_cluster.xlsx', index=False)
+
+file_path = 'C:/Users/lucy8/PycharmProjects/Capstone_1/project_data/encoded_cluster.xlsx'
+encoded_df.to_excel(file_path, index=False, encoding='utf-8-sig')
 
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
