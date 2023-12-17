@@ -1,4 +1,4 @@
-"금융관련 키워드 랜덤으로 제공"
+"금융관련 키워드 랜덤으로 제공 및 클러스터 특징에 따른 알맞은 금융 꿀팁 제공"
 import pandas as pd
 import random
 

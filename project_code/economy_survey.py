@@ -1,7 +1,8 @@
 import pandas as pd
+import os
 
 # xlsx 파일을 불러오기
-file_path = "/Capstone_1/economy_survey.xlsx"
+file_path = "C:/Users/lucy8/PycharmProjects/Capstone_1/project_data/economy_survey.xlsx"
 df = pd.read_excel(file_path)
 
 
@@ -30,4 +31,6 @@ df.drop(columns=['전화번호를 입력해주세요. (기프티콘 제공 위�
 df.drop(columns=['타임스탬프'], inplace=True)
 print(df)
 
-df.to_excel('economy_survey_2.xlsx', index=False)
+file_path = 'C:/Users/lucy8/PycharmProjects/Capstone_1/project_data/economy_survey_2.xlsx'
+df.to_excel(file_path, index=False, encoding='utf-8-sig')
+
