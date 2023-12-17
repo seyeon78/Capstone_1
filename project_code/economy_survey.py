@@ -1,7 +1,7 @@
 import pandas as pd
 
 # xlsx 파일을 불러오기
-file_path = "C:/Users/lucy8/PycharmProjects/Capstone_1/economy_survey.xlsx"
+file_path = "/Capstone_1/economy_survey.xlsx"
 df = pd.read_excel(file_path)
 
 
