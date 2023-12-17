@@ -2,13 +2,14 @@
 import pandas as pd
 import random
 
+# 파일 불러오기
 word=pd.read_csv("./../project_data/combined_data.csv")
 tip=pd.read_excel("./../project_data/finacial_tip_level.xlsx")
 
-# 데이터프레임에서 랜덤으로 10개 행 선택
+# word에서 랜덤으로 10개 행 선택
 random_rows = word.sample(n=10)
 
-# 결과 출력
+# 용어와 설명 출력
 print(random_rows.to_markdown(index=False))
 print()
 
@@ -22,15 +23,15 @@ if user_input not in valid_inputs:
 else:
     user_input = int(user_input)  # 입력값을 정수로 변환
 
-    # 출력 옵션 변경
-    tip.set_option('display.max_colwidth', None)
-
+    # 링크 전체가 출력될 수 있도록 출력 옵션 변경
+    pd.set_option('display.max_colwidth', None)
+    # 입력한 클러스터 값에 해당하는 행을 랜덤으로 3개 선택
     result = tip[tip.iloc[:, 2] == user_input].iloc[:, [0, 1]].sample(n=3)
 
     if result.empty:
         print(f"입력값 {user_input}에 해당하는 행이 없습니다.")
     else:
-        print(result)
+        print(result) # title과 link 출력
 
     # 출력 옵션 초기화
-    tip.reset_option('display.max_colwidth')
+    pd.reset_option('display.max_colwidth')
