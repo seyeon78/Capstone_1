@@ -23,7 +23,7 @@ else:
     user_input = int(user_input)  # 입력값을 정수로 변환
 
     # 출력 옵션 변경
-    pd.set_option('display.max_colwidth', None)
+    tip.set_option('display.max_colwidth', None)
 
     result = tip[tip.iloc[:, 2] == user_input].iloc[:, [0, 1]].sample(n=3)
 
@@ -33,4 +33,4 @@ else:
         print(result)
 
     # 출력 옵션 초기화
-    pd.reset_option('display.max_colwidth')
+    tip.reset_option('display.max_colwidth')
