@@ -37,8 +37,8 @@ def crawl_all_content(url, max_pages=15):
     # 데이터프레임 생성
     df = pd.DataFrame(data)
 
-    # CSV 파일로 저장 (UTF-8 인코딩 사용)
-    df.to_csv('financial_tip.csv', index=False, encoding='utf-8-sig')
+    file_path = 'C:/Users/lucy8/PycharmProjects/Capstone_1/project_data/financial_tip.csv'
+    df.to_csv(file_path, index=False, encoding='utf-8-sig')
 
 # 크롤링할 웹페이지의 URL
 url_to_crawl = 'https://fine.fss.or.kr/fine/bbs/B0000340/list.do?menuNo=900014&viewType='
