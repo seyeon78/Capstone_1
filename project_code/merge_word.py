@@ -1,7 +1,7 @@
-#필요한 라이브러리 호출
+# 필요한 라이브러리 호출
 import pandas as pd
 
-# # xlsx 파일(금융용어)을 불러오기
+# xlsx 파일(금융용어)을 불러오기
 df1=pd.read_csv("./../project_data/중소기업은행_금융용어 해설.csv", encoding='euc-kr')
 df2=pd.read_csv("./../project_data/한국산업은행_금융 관련 용어.csv", encoding='euc-kr')
 df3=pd.read_csv("./../project_data/한국자산관리공사_공사홈페이지_용어사전.csv", encoding='utf-8')
