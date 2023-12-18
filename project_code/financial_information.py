@@ -1,8 +1,12 @@
-"금융관련 키워드 랜덤으로 제공 및 클러스터 특징에 따른 알맞은 금융 꿀팁 제공"
-import pandas as pd
-import random
+"""금융관련 키워드 랜덤으로 제공 및 클러스터 특징에 따른 알맞은 금융 꿀팁 제공
+금융 단어는 랜덤으로 10개 제공, 금융관련 꿀팁은 클러스터의 특징에 따라 0,1,2로 구분하여 특징에 알맞는 정보제공
+0: 기초적인 금융 꿀팁, 1: 안정적인, 장기적인 재테크(예금) 관련 꿀팁, 2: 주식 등과 같은 재테크 관련 꿀팁 """
 
-# 파일 불러오기
+#필요한 라이브러리 호출
+import pandas as pd
+
+
+# xlsx 파일(금융단어, 금융 꿀팁)을 불러오기
 word=pd.read_csv("./../project_data/combined_data.csv")
 tip=pd.read_excel("./../project_data/finacial_tip_level.xlsx")
 

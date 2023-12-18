@@ -1,13 +1,13 @@
-#1
+#필요한 라이브러리 호출
 
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import matplotlib.font_manager as fm
 
 # 폰트 설정
 plt.rcParams['font.family'] = 'NanumGothic'
 
-import matplotlib.font_manager as fm
 font_location = 'C:/Windows/Fonts/NanumGothic.ttf'  #font 경로 설정
 font_name = fm.FontProperties(fname=font_location).get_name()
 plt.rc('font', family=font_name)

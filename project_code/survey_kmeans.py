@@ -1,3 +1,4 @@
+
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.cluster import KMeans
@@ -26,8 +27,11 @@ encoded_df['cluster'] = kmeans.fit_predict(encoded_df)
 # 결과 확인
 print(encoded_df)
 
+# xlsx 파일(클러스터링 결과)을 저장하기
 file_path = './../project_data/encoded_cluster.xlsx'
 encoded_df.to_excel(file_path, index=False, encoding='utf-8-sig')
+
+#필요한 라이브러리 호출
 
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA

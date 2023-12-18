@@ -1,3 +1,4 @@
+#필요한 라이브러리 호출
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -37,6 +38,7 @@ def crawl_all_content(url, max_pages=15):
     # 데이터프레임 생성
     df = pd.DataFrame(data)
 
+    # csv 파일(금융꿀팁)을 저장하기
     file_path = './../project_data/financial_tip.csv'
     df.to_csv(file_path, index=False, encoding='utf-8-sig')
 

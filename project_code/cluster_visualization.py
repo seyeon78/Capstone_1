@@ -1,18 +1,16 @@
+# 필요한 라이브러리 호출
 import pandas as pd
-import random
 import matplotlib.pyplot as plt
 
+# xlsx 파일(설문조사 인코딩 후 클러스터링 결과)을 불러오기
 visual=pd.read_excel("./../project_data/encoded_cluster.xlsx")
 
-# cluster가 0인 행만 선택
-import matplotlib.pyplot as plt
-
-# Number of clusters
+# 클러스터의 개수
 num_clusters = 3
 
-# Iterate through clusters
+# 클러스터의 개수만큼 반복
 for cluster_number in range(num_clusters):
-    # Select data for the current cluster
+    # 클러스터 선택 (0,1,2)
     cluster_data = visual[visual['cluster'] == cluster_number]
 
     # purpose_encoded, investment_1_encoded, investment_2_encoded, knowledge_encoded 값 세기
@@ -46,7 +44,7 @@ for cluster_number in range(num_clusters):
 
     plt.tight_layout()
 
-# Display all plots at once
+# 그래프 한 눈에 확인하기
 plt.show()
 
 
