@@ -1,8 +1,9 @@
-
+# 필요한 라이브러리 호출
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.cluster import KMeans
 
+# xlsx 파일(설문결과)을 불러오기
 df=pd.read_excel("./../project_data/economy_survey_2.xlsx")
 
 
@@ -48,6 +49,7 @@ for cluster_label in encoded_df['cluster'].unique():
     cluster_data = encoded_2d[encoded_df['cluster'] == cluster_label]
     plt.scatter(cluster_data[:, 0], cluster_data[:, 1], label=f'Cluster {cluster_label}')
 
+# 그래프 표시하기
 plt.title('KMeans Clustering Result')
 plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')
