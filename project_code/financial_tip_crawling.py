@@ -1,3 +1,8 @@
+"""
+금융소비자 정보포털 '파인'에 있는 금융 관련 꿀팁을 크롤링
+크롤링 결과물을 csv 파일로 저장
+"""
+
 #필요한 라이브러리 호출
 import requests
 from bs4 import BeautifulSoup
