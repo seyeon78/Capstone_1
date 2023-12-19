@@ -8,7 +8,7 @@ import pandas as pd
 
 # xlsx 파일(금융단어, 금융 꿀팁)을 불러오기
 word=pd.read_csv("./../project_data/combined_data.csv")
-tip=pd.read_excel("./../project_data/finacial_tip_level.xlsx")
+tip=pd.read_excel("./../project_data/financial_tip_level.xlsx")
 
 # word에서 랜덤으로 10개 행 선택
 random_rows = word.sample(n=10)
