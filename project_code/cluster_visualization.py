@@ -26,6 +26,7 @@ for cluster_number in range(num_clusters):
     knowledge_counts = cluster_data['knowledge_encoded'].value_counts()
 
     # 막대그래프 그리기
+    # 각 그래프는 설문조사 클러스터 시각화( 제태크 목적, 선호하는 투자 1,2순위, 금융지식 수준정도)
     fig, axes = plt.subplots(nrows=4, ncols=1, figsize=(4, 8))
 
     purpose_counts.plot(kind='bar', ax=axes[0], color='skyblue', edgecolor='black')

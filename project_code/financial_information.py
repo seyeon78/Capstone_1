@@ -5,7 +5,6 @@
 #필요한 라이브러리 호출
 import pandas as pd
 
-
 # xlsx 파일(금융단어, 금융 꿀팁)을 불러오기
 word=pd.read_csv("./../project_data/combined_data.csv")
 tip=pd.read_excel("./../project_data/financial_tip_level.xlsx")

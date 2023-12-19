@@ -14,7 +14,7 @@ df = pd.read_excel(file_path)
 # 데이터 확인
 print("불러온 데이터:", df)
 
-# 각 질문에 대해 컬럼명 변경 (설문조사 질문>영어단어)
+# 코드의 효율성을 위해 각 질문에 대해 컬럼명 변경 (설문조사 질문>영어 단어)
 df.rename(columns={'연령대는 어떻게 되시나요?': 'age'}, inplace=True)
 df.rename(columns={'현재 고정수입은 얼마인가요?': 'income'}, inplace=True)
 df.rename(columns={'한달 평균 총 소비금액은 얼마인가요?': 'consumption'}, inplace=True)
@@ -32,7 +32,7 @@ df.rename(columns={'투자하고자 하는 자금은 고객님의 전체 금융�
 # 변경된 데이터 확인
 # print(df)
 
-# 불필요한 '전화번호를 입력해주세요. (기프티콘 제공 위함)','타임 스탬프' 열 삭제
+# 데이터 분석에 불필요한 '전화번호를 입력해주세요. (기프티콘 제공 위함)','타임 스탬프' 열 삭제
 df.drop(columns=['전화번호를 입력해주세요. (기프티콘 제공 위함)'], inplace=True)
 df.drop(columns=['타임스탬프'], inplace=True)
 print(df)
