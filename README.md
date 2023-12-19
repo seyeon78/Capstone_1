@@ -1,4 +1,6 @@
-# Capstone_1_2조
+# Capstone_1_2조 (데이터 수집 및 전처리)
+
+## main branch에서 모든 작업 후, 세부 branch로 결과값 분리
 
 ### 파일명  설명 
 - merge_word.py : ‘중소기업은행_금융용어 해설.csv’, + ‘한국산업은행_금융 관련 용어.csv’ + ‘한국자산관리공사_공사홈페이지_용어사전.csv’ merge 코드
