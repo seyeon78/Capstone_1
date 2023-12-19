@@ -1,11 +1,20 @@
 # Capstone_1_2조
 
 ### 파일명  설명 
-
+- merge_word.py : ‘중소기업은행_금융용어 해설.csv’, + ‘한국산업은행_금융 관련 용어.csv’ + ‘한국자산관리공사_공사홈페이지_용어사전.csv’ merge 코드
+- financial_information.py : 'financial_tip.csv'를 랜덤 추출하는 코드와 ‘merge_word.py’ merge한 코드 (금융 정보 제공)
+- financial_tip_crawling.py: 금융소비자 정보포털에서 금융 꿀팁 크롤링 코드
+- survery_kmeans.py : 설문 조사 결과를 바탕으로 kmeans 및 시각화 코드
 
 ### 데이터명 설명
+- combined_data.csv: ‘중소기업은행_금융용어 해설.csv'’ + ‘한국산업은행_금융 관련 용어.csv’ + ‘한국자산관리공사_공사홈페이지_용어사전.csv’ merge한 파일
+- financial_tip.csv : 금융소비자 정보포털에서 크롤링한 금융 꿀팁
 
 
+- economy_survey.xlsx : 설문조사 결과 원본
+- economy_survey_2.xlsx : economy_survey.xlsx 칼럼명 영어로 변경
+- encoded_columns.xlsx : kmeans를 위해 레이블 인코딩한 설문조사 결과
+- encoded_cluster.xlsx : encoded_columns.csv에 클러스터 결과를 추가한 파일
 ### 발전 정도
 - 데이터사이언스 캡스톤 디자인 1 결과물
     - 선행 연구 정리 및 데이터 수집
