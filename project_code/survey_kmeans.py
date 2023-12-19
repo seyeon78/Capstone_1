@@ -1,3 +1,8 @@
+"""
+사용자 설문조사 결과 KMeans 진행, 각 그룹의 분포를 파악
+시각화를 위해 PCA(차원축소)한 후 2차원에 표현
+"""
+
 # 필요한 라이브러리 호출
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
